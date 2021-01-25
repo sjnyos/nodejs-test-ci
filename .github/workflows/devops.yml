@@ -19,6 +19,9 @@ jobs:
       - name: npm install 
         run: npm install 
 
+      - name: init mongodb
+        run: npm run mongo:start
+
       - name: npm  run dev
         run: npm run dev
       
