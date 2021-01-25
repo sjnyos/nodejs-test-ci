@@ -34,7 +34,7 @@ if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
   
-  mongoose.connect('mongodb://localhost/conduit');
+  mongoose.connect('mongodb://realworld-mongo:27017/conduit');
   mongoose.set('debug', true);
 }
 
